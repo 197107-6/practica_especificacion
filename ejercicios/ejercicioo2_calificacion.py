@@ -82,3 +82,25 @@ Se necesita mostrar la calificación final y si el alumno aprobó.
 
 # Implementa el algoritmo anterior utilizando las funciones
 # del contrato.
+
+def leerParciales() -> tuple:
+    parcial1 = float(input("Ingrese la calificacion del primer parcial: "))
+    parcial2 = float(input("Ingrese la calificacion del segundo parcial: "))
+    parcial3 = float(input("Ingrese la calificacion del tercer parcial: "))
+    return (parcial1, parcial2, parcial3)
+
+def calcularFinal(parcial1, parcial2, parcial3) -> float:
+    final = parcial1 * 0.30 + parcial2 * 0.30 + parcial3 * 0.40
+    return final
+
+def determinarEstado(parcial1, parcial2, parcial3, final) -> str:
+    if parcial1 < 50 or parcial2 < 50 or parcial3 < 50:
+        return "Reprobado"
+    elif final >= 70:
+        return "Aprobado"
+    else:
+        return "Reprobado"
+
+def mostrarResultado(final, estado) -> None:
+    print(f"Calificacion final: {final:.2f}")
+    print(f"Estado: {estado}")

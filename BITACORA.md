@@ -100,3 +100,27 @@
 # Resultado esperado: $76.50
 # Se comprueba que al llegar a 3 horas
 # se aplique el descuento del 15%.
+
+# EJERCICIO 6
+
+# CASO DE PRUEBA 1
+# Entrada: 8 años
+# Calculo: 80 * 0.50 = $40.00
+# Resultado esperado: $40.00
+# Se comprueba que un niño menor de 12 años
+# pague la mitad del boleto.
+
+# CASO DE PRUEBA 2
+# Entrada: 12 años
+# Calculo: 80 * 0.50 = $40.00
+# Resultado esperado: $40.00
+# Se comprueba que a los 12 años
+# todavia se aplique el descuento.
+
+# CASO DE PRUEBA 3
+# Entrada: 13 años
+# Calculo: precio = $80.00
+# Resultado esperado: $80.00
+# Se comprueba que a partir de los 13 años
+# se cobre el precio normal.
+

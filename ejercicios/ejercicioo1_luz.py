@@ -72,3 +72,19 @@ del mes.
 
 # Implementa el algoritmo anterior utilizando las funciones
 # del contrato.
+
+def leerConsumo() -> float:
+    consumo = float(input("Ingrese el consumo mensual en kWh: "))
+    return consumo
+
+def calcularPago(consumo) -> float:
+    if consumo <= 150:
+        return consumo * 1.00
+    elif consumo <= 280:
+        return 150 * 1.00 + (consumo - 150) * 1.50
+    else:
+        return 150 * 1.00 + 130 * 1.50 + (consumo - 280) * 3.00
+
+def mostrarRecibo(consumo, pago) -> None:
+    print(f"Consumo: {consumo:.2f} kWh")
+    print(f"Total a pagar: ${pago:.2f}")

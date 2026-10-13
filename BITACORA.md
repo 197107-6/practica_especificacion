@@ -44,3 +44,33 @@
 # Se comprueba que el alumno reprueba aunque su
 # calificacion final sea mayor a 70, porque tiene
 # un parcial menor a 50.
+
+# EJERCICIO 3
+
+# CASO DE PRUEBA 1
+# Entrada: $500
+# Descuento: 500 * 0 = $0.00
+# IVA: 500 * 0.16 = $80.00
+# Total: 500 - 0 + 80 = $580.00
+# Resultado esperado: $580.00
+# Se comprueba que las compras menores a $1000
+# no tengan descuento.
+
+# CASO DE PRUEBA 2
+# Entrada: $900
+# Descuento: 900 * 0 = $0.00
+# IVA: 900 * 0.16 = $144.00
+# Total: 900 - 0 + 144 = $1044.00
+# Resultado esperado: $1044.00
+# Se comprueba que no se aplique descuento
+# cuando la compra sea menor a $1000.
+
+# CASO DE PRUEBA 3
+# Entrada: $1000
+# Descuento: 1000 * 0.10 = $100.00
+# Subtotal con descuento: 1000 - 100 = $900.00
+# IVA: 900 * 0.16 = $144.00
+# Total: 900 + 144 = $1044.00
+# Resultado esperado: $1044.00
+# Se comprueba que al llegar a $1000
+# se aplique el descuento del 10%.

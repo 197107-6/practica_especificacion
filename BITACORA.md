@@ -74,3 +74,29 @@
 # Resultado esperado: $1044.00
 # Se comprueba que al llegar a $1000
 # se aplique el descuento del 10%.APROBADO
+
+# EJERCICIO 5
+
+# CASO DE PRUEBA 1
+# Entrada: 1 hora
+# Calculo: 1 * 30 = $30.00
+# Descuento: $0.00
+# Resultado esperado: $30.00
+# Se comprueba que no se aplique descuento
+# cuando se renta menos de 3 horas.
+
+# CASO DE PRUEBA 2
+# Entrada: 2 horas
+# Calculo: 2 * 30 = $60.00
+# Descuento: $0.00
+# Resultado esperado: $60.00
+# Se comprueba que con 2 horas no se aplica descuento.
+
+# CASO DE PRUEBA 3
+# Entrada: 3 horas
+# Calculo: 3 * 30 = $90.00
+# Descuento: 90 * 0.15 = $13.50
+# Total: 90 - 13.50 = $76.50
+# Resultado esperado: $76.50
+# Se comprueba que al llegar a 3 horas
+# se aplique el descuento del 15%.

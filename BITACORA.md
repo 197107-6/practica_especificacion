@@ -124,3 +124,25 @@
 # Se comprueba que a partir de los 13 años
 # se cobre el precio normal.
 
+# Ejercicio 7
+
+# CASO DE PRUEBA 1
+# Entrada: 50 km/h
+# Limite permitido: 60 km/h
+# Resultado esperado: $0.00
+# Se comprueba que no exista multa cuando
+# la velocidad es menor al limite permitido.
+
+# CASO DE PRUEBA 2
+# Entrada: 60 km/h
+# Limite permitido: 60 km/h
+# Resultado esperado: $0.00
+# Se comprueba que al circular exactamente
+# a 60 km/h no se aplique ninguna multa.
+
+# CASO DE PRUEBA 3
+# Entrada: 61 km/h
+# Exceso: 61 - 60 = 1 km/h
+# Resultado esperado: $500.00
+# Se comprueba que al superar el limite
+# de velocidad se aplique la multa de $500.
